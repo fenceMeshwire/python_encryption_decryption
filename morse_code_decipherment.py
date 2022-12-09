@@ -39,7 +39,7 @@ def morse_to_alphabet(morse_to_sentence):
             if key == word:
                 translated += MORSE_TO_ALPHABET[key]
         translated += " "
-    return translated
+    return translated[0:-1]
 
 if __name__ == '__main__':
     phrase = 'help me, sos!'
